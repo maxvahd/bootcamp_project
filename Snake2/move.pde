@@ -27,12 +27,18 @@ class Snake
     if(Pos.x == width || Pos.y == height)
     {
       lose = true;
-      highscore = body;
+      if (body> highscore)
+      {
+        highscore = body;
+      }
     }
     if (Pos.x == 0 || Pos.y == 0)
     {
       lose = true;
-      highscore = body;
+      if(body> highscore)
+      {
+        highscore = body;
+      }
     }
     
     if (next.size() > body)
