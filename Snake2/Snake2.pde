@@ -45,11 +45,11 @@ void draw()
 void changeFood()
 {
   //Changes the position of the food in the sketch
-  food.x = round(random(width));
-  food.y = round(random(height));
+  food.x = floor(random(width));
+  food.y = floor(random(height));
   //Aligns food box with snake box
-  food.x = round(food.x/b) * b;
-  food.y = round(food.y/b) * b;
+  food.x = floor(food.x/b) * b;
+  food.y = floor(food.y/b) * b;
 }
 
 void mousePressed()
